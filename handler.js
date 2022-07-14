@@ -17,7 +17,7 @@ module.exports = {
         case MessageType.video:
         case MessageType.audio:
           if (!m.key.fromMe) await delay(1000)
-          if (!m.msg.url) await this.updateMediaMessage(m)
+          if (!m.msg.url) await this.updateMediaMessage(m) 
           break
       }
       m.exp = 0
